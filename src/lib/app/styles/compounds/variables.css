@@ -1,4 +1,13 @@
 :root {
+  --foreground: #ffffff;
+  --background: #171717;
+
+  --header-height: 60px;
+  --sidebar-width: 250px;
+}
+
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 
@@ -11,4 +20,4 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */

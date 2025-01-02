@@ -1,0 +1,19 @@
+{
+  "Test": {
+    "test": "Це тестовий текст."
+  },
+  "Home": {
+    "greeting": "Привіт! Я",
+    "name": "Віталій Вердієв",
+    "position": "Full-stack Розробник",
+    "actions": {
+      "hire-me": "Найміть мене",
+      "download-resume": "Завантажити Резюме"
+    },
+    "achievements": {
+      "experience": "Досвід",
+      "projects": "Проекти",
+      "ideas": "Ідеї"
+    }
+  }
+}

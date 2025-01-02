@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Providers } from "@/app/providers";
-import { Header, Main, Sidebar } from "@/widgets/layout";
 import { geistMono, geistSans } from "./font";
+import { Providers } from "@/app/providers";
 import "@/app/styles/global.css";
 
 export const metadata: Metadata = {
-  title: "VitaliiVerdiiev",
+  title      : "VitaliiVerdiiev",
   description: "With love for coding.",
 };
 
@@ -22,11 +21,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <div id="app">
-            <Header />
-            <Sidebar />
-            <Main>{children}</Main>
-          </div>
+          {children}
         </Providers>
       </body>
     </html>
