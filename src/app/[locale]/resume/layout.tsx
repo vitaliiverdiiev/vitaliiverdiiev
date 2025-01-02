@@ -15,7 +15,7 @@ export default async function HomeLayout({
 }>) {
   return (
     <div id="app">
-      <Header />
+      <Header className="[&>div]:max-w-full" />
       <Sidebar />
       <Main>
         {children}
