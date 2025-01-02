@@ -1,7 +1,10 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { Button } from "@nextui-org/react";
 
 export const LoginButton = () => {
-  return <Button>Login</Button>;
+  const t = useTranslations("Actions");
+
+  return <Button>{t("login")}</Button>;
 };

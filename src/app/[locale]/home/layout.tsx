@@ -14,10 +14,10 @@ export default async function HomeLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
+    <div id="home-page">
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 }

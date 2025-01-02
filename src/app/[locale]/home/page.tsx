@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   const t = useTranslations("Home");
+  const tActions = useTranslations("Actions");
 
   return (
     <section>
@@ -28,21 +29,21 @@ export default function Home() {
             <li className="size-10 rounded-full bg-red-100" />
           </ul>
           <div className="flex items-center gap-6 mb-[80px]">
-            <Button>
-              {t("actions.hire-me")}
-            </Button>
-            <Button variant="ghost">
-              {t("actions.download-resume")}
-            </Button>
+            <Button>{tActions("hire-me")}</Button>
+            <Button variant="ghost">{tActions("download-resume")}</Button>
           </div>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 gap-6 bg-green-900 rounded-[10px]">
             <div className="flex flex-col p-6">
               <span
                 className={"text-[24px] leading-[29px] mb-3 font-extrabold"}
               >
                 5+
               </span>
-              <span className={"text-[24px] leading-[29px] font-bold"}>
+              <span
+                className={
+                  "text-[24px] leading-[29px] font-bold text-orange-400"
+                }
+              >
                 {t("achievements.experience")}
               </span>
             </div>
@@ -50,20 +51,28 @@ export default function Home() {
             <div className="flex flex-col p-6">
               <span
                 className={"text-[24px] leading-[29px] mb-3 font-extrabold"}
-                >
+              >
                 16+
               </span>
-              <span className={"text-[24px] leading-[29px] font-bold"}>
+              <span
+                className={
+                  "text-[24px] leading-[29px] font-bold text-orange-400"
+                }
+              >
                 {t("achievements.projects")}
               </span>
             </div>
             <div className="flex flex-col p-6">
               <span
                 className={"text-[24px] leading-[29px] mb-3 font-extrabold"}
-                >
+              >
                 12+
               </span>
-              <span className={"text-[24px] leading-[29px] font-bold"}>
+              <span
+                className={
+                  "text-[24px] leading-[29px] font-bold text-orange-400"
+                }
+              >
                 {t("achievements.ideas")}
               </span>
             </div>

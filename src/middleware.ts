@@ -1,15 +1,19 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import createMiddleware from 'next-intl/middleware';
+import { routing } from './i18n/routing';
 
-export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
-  const locales = ['/ua', '/en']; // List of supported locales
+export default createMiddleware(routing);
 
-  // Check if the pathname starts with a locale
-  const locale = locales.find(loc => pathname.startsWith(loc));
-  if (locale && pathname === locale) {
-    return NextResponse.rewrite(new URL(`${locale}/home`, request.url));
-  }
-  
-  return NextResponse.next();
-}
+export const config = {
+  matcher: [
+    // Enable a redirect to a matching locale at the root
+    '/',
+
+    // Set a cookie to remember the previous locale for
+    // all requests that have a locale prefix
+    '/(ua|en)/:path*',
+
+    // Enable redirects that add missing locales
+    // (e.g. `/pathnames` -> `/en/pathnames`)
+    '/((?!_next|_vercel|.*\\..*).*)'
+  ]
+};

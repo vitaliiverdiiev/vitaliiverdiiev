@@ -1,10 +1,13 @@
+import { useTranslations } from "next-intl";
+
 export const Footer = () => {
+  const t = useTranslations("Footer");
+
   return (
-    <footer className="h-[40px]">
+    <footer className="h-[80px]">
       <div className="container flex items-center justify-center">
         <p>
-          Powered by creativity and curiosity. © 2025. There are no rights to
-          reserve.
+          {t('copy')}
         </p>
       </div>
     </footer>

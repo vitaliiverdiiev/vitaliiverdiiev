@@ -2,18 +2,26 @@
   "Test": {
     "test": "This is a test text."
   },
+  "Actions": {
+    "hire-me": "Hire me",
+    "download-resume": "Download Resume",
+    "login": "Login"
+  },
+  "Links": {
+    "home": "Home",
+    "resume": "Resume"
+  },
   "Home": {
     "greeting": "Hi! I am",
     "name": "Vitalii Verdiiev",
     "position": "Full-stack Developer",
-    "actions": {
-      "hire-me": "Hire me",
-      "download-resume": "Download Resume"
-    },
     "achievements": {
       "experience": "Experience",
       "projects": "Projects",
       "ideas": "Ideas"
     }
+  },
+  "Footer": {
+    "copy": "Powered by creativity and curiosity. © 2025. There are no rights to reserve."
   }
 }
