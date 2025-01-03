@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { normalizePath } from "@/shared/utils";
+import { cn, normalizePath } from "@/shared/utils";
 
 type Props = {
   label: string;
@@ -15,7 +15,7 @@ export const NavLink: React.FC<Props> = ({ href, label, currentPath }) => {
 
   return (
     <li>
-      <Link href={href} className={currentStyles}>
+      <Link href={href} className={cn(currentStyles, 'text-lg')}>
         {label}
       </Link>
     </li>

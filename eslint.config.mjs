@@ -14,7 +14,7 @@ const eslintConfig = [
   {
     rules: {
       "no-console"          : "error",
-      "max-len"             : ["error", { code: 80 }],
+      "max-len"             : ["error", { code: 120 }],
       "object-curly-spacing": ["error", "always"],
       "key-spacing"         : [
         "error",
