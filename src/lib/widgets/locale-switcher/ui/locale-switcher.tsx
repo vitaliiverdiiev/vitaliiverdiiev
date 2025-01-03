@@ -3,7 +3,7 @@
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { usePathname } from "../../../../i18n/routing";
-import { Button } from "@nextui-org/react";
+import { Button, ButtonGroup } from "@nextui-org/react";
 
 type Props = {
   isSelected: boolean;
@@ -20,6 +20,7 @@ export const LocaleButton: React.FC<Props> = ({
     <Button
       variant={isSelected ? "solid" : "ghost"}
       onPress={() => changeLocale("en")}
+      isIconOnly
     >
       {locale}
     </Button>
@@ -35,9 +36,9 @@ export const LocaleSwitcher = () => {
     router.push(`/${locale}${pathname}`);
     router.refresh();
   };
-  console.log({ locale });
+  
   return (
-    <div className="flex items-center justify-center gap-4">
+    <ButtonGroup>
       <LocaleButton
         changeLocale={() => handleChange("en")}
         isSelected={locale === "en"}
@@ -48,6 +49,6 @@ export const LocaleSwitcher = () => {
         isSelected={locale === "ua"}
         locale="UA"
       />
-    </div>
+    </ButtonGroup>
   );
 };

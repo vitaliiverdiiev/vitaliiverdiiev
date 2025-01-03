@@ -9,10 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background  : "var(--background)",
-        foreground  : "var(--foreground)",
-        "brand-main": "var(--brand-main)",
-        "brand-dark": "var(--brand-dark)",
+        background       : "var(--background)",
+        "background-card": "var(--background-card)",
+        foreground       : "var(--foreground)",
+        "brand-main"     : "var(--brand-main)",
+        "brand-dark"     : "var(--brand-dark)",
       },
     },
   },

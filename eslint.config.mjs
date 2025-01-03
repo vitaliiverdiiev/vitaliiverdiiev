@@ -13,6 +13,7 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     rules: {
+      "no-console"          : "error",
       "max-len"             : ["error", { code: 80 }],
       "object-curly-spacing": ["error", "always"],
       "key-spacing"         : [

@@ -4,16 +4,19 @@ import {
   GithubLogo,
   InstagramLogo,
   LinkedinLogo,
+  Moon,
+  SunDim,
   TelegramLogo,
 } from "@phosphor-icons/react/dist/ssr";
-import { g } from "framer-motion/client";
 
 export const ICON_MAP = {
   "carret-down": CaretDown,
   github       : GithubLogo,
   instagram    : InstagramLogo,
   linkedin     : LinkedinLogo,
+  moon         : Moon,
   settings     : GearSix,
+  sun          : SunDim,
   telegram     : TelegramLogo,
 } as const;
 

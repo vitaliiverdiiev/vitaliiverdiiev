@@ -1,30 +1,19 @@
 :root {
-  --foreground: #ffffff;
-  --background: #171717;
-
-  --brand-main: #4CAF50;
-  --brand-dark: #388E3C	;
-
-/* 
-  Main Green	#4CAF50	Buttons, links, highlights
-  Dark Green	#388E3C	Hover effects, active states
-  Light Green	#A5D6A7	Subtle highlights, badges
-  Black	#212121	Text, headers, dark background
-  Dark Gray	#333333	Secondary background
-  Medium Gray	#BDBDBD	Borders, secondary text
-  Light Gray	#F5F5F5	Backgrounds
-  White	#FFFFFF	Main background, text highlights 
-*/
-
-  --header-height: 100px;
-  --sidebar-width: 250px;
-}
-
-
-/* :root {
   --background: #ffffff;
   --foreground: #171717;
+  --background-card: #F5F5F5;
 
+  --black: #212121; /* Text, headers, dark background */
+  --white: #FFFFFF; /* Main background, text highlights */
+  
+  --brand-main: #4caf50; /* Buttons, links, highlights */
+  --brand-dark: #388e3c; /* Hover effects, active states */
+  --brand-light: #A5D6A7; /* Subtle highlights, badges */
+  
+  --dark-gray: #333333; /* Secondary background */
+  --medium-gray: #BDBDBD; /* Borders, secondary text */
+  --light-gray: #F5F5F5; /* Backgrounds */
+  
   --header-height: 60px;
   --sidebar-width: 250px;
 }
@@ -33,5 +22,29 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --background-card: #333333;
   }
+}
+
+/* :root {
+  --foreground: #ffffff;
+  --background: #171717;
+
+  --brand-main: #4caf50;
+  --brand-dark: #388e3c;
+
+  
+  --header-height: 100px;
+  --sidebar-width: 250px;
 } */
+
+/* 
+Main Green	#4CAF50	Buttons, links, highlights
+Dark Green	#388E3C	Hover effects, active states
+Light Green	#A5D6A7	Subtle highlights, badges
+Black	#212121	Text, headers, dark background
+Dark Gray	#333333	Secondary background
+Medium Gray	#BDBDBD	Borders, secondary text
+Light Gray	#F5F5F5	Backgrounds
+White	#FFFFFF	Main background, text highlights 
+*/

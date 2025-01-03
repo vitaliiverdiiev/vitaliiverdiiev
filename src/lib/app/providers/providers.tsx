@@ -1,11 +1,14 @@
 import { PropsWithChildren } from "react";
 import { NextUIProvider } from "./next-ui";
 import { NextIntlProvider } from "./next-intl";
+import { ThemeProvider } from "./theme";
 
 export const Providers = ({ children }: PropsWithChildren) => {
   return (
-    <NextUIProvider>
-      <NextIntlProvider>{children}</NextIntlProvider>
-    </NextUIProvider>
+    <ThemeProvider>
+      <NextUIProvider>
+        <NextIntlProvider>{children}</NextIntlProvider>
+      </NextUIProvider>
+    </ThemeProvider>
   );
 };

@@ -1,9 +1,11 @@
 'use client';
 import { Logo, Nav } from "@/widgets";
-import { LoginButton } from "@/features";
-import { UserSettingsDropdown } from "@/widgets/user-settings-dropdown";
+// import { LoginButton } from "@/features";
+// import { UserSettingsDropdown } from "@/widgets/user-settings-dropdown";
 import { cn } from "@/shared/utils/cn";
-import { ButtonGroup } from "@nextui-org/react";
+// import { ButtonGroup } from "@nextui-org/react";
+import { ThemeToggle } from "@/widgets/theme-switcher/ui/theme-switcher";
+import { LocaleSwitcher } from "@/widgets/locale-switcher/ui/locale-switcher";
 
 export const Header = ({ className = "" }: PropsWithClassName) => {
   return (
@@ -11,10 +13,14 @@ export const Header = ({ className = "" }: PropsWithClassName) => {
       <div className="container flex justify-between items-center">
         <Logo />
         <Nav />
-        <ButtonGroup size="md" >
+        <div className="flex items-center space-x-4">
+          <ThemeToggle />
+          <LocaleSwitcher />
+        </div>
+        {/* <ButtonGroup size="md" >
           <UserSettingsDropdown />
           <LoginButton />
-        </ButtonGroup>
+        </ButtonGroup> */}
       </div>
     </header>
   );

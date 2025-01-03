@@ -9,6 +9,7 @@ import {
 } from "@nextui-org/react";
 import { LocaleSwitcher } from "./locale-switcher/ui/locale-switcher";
 import { Icon } from "@/shared/ui";
+import { ThemeToggle } from "./theme-switcher/ui/theme-switcher";
 
 export const UserSettingsDropdown = () => {
   return (
@@ -27,6 +28,12 @@ export const UserSettingsDropdown = () => {
           <div className="grid grid-cols-[auto_1fr] items-center gap-8">
             <span>Lang:</span>
             <LocaleSwitcher />
+          </div>
+        </DropdownItem>
+        <DropdownItem key={1}>
+          <div className="grid grid-cols-[auto_1fr] items-center gap-8">
+            <span>Theme:</span>
+            <ThemeToggle />
           </div>
         </DropdownItem>
       </DropdownMenu>
