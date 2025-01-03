@@ -2,6 +2,20 @@
   --foreground: #ffffff;
   --background: #171717;
 
+  --brand-main: #4CAF50;
+  --brand-dark: #388E3C	;
+
+/* 
+  Main Green	#4CAF50	Buttons, links, highlights
+  Dark Green	#388E3C	Hover effects, active states
+  Light Green	#A5D6A7	Subtle highlights, badges
+  Black	#212121	Text, headers, dark background
+  Dark Gray	#333333	Secondary background
+  Medium Gray	#BDBDBD	Borders, secondary text
+  Light Gray	#F5F5F5	Backgrounds
+  White	#FFFFFF	Main background, text highlights 
+*/
+
   --header-height: 100px;
   --sidebar-width: 250px;
 }

@@ -1,7 +1,9 @@
+'use client';
 import { Logo, Nav } from "@/widgets";
 import { LoginButton } from "@/features";
 import { UserSettingsDropdown } from "@/widgets/user-settings-dropdown";
 import { cn } from "@/shared/utils/cn";
+import { ButtonGroup } from "@nextui-org/react";
 
 export const Header = ({ className = "" }: PropsWithClassName) => {
   return (
@@ -9,10 +11,10 @@ export const Header = ({ className = "" }: PropsWithClassName) => {
       <div className="container flex justify-between items-center">
         <Logo />
         <Nav />
-        <div className="flex items-center justify-center gap-4">
+        <ButtonGroup size="md" >
           <UserSettingsDropdown />
           <LoginButton />
-        </div>
+        </ButtonGroup>
       </div>
     </header>
   );

@@ -19,7 +19,7 @@ export const UserSettingsDropdown = () => {
           isIconOnly
           aria-label="User settings dropdown"
         >
-          <Icon icon="settings" />
+          <Icon icon="carret-down" size={16} />
         </Button>
       </DropdownTrigger>
       <DropdownMenu aria-label="User settings dropdown">

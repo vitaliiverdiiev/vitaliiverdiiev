@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import {nextui} from "@nextui-org/react";
+import { nextui } from "@nextui-org/react";
 
 export default {
   content: [
@@ -9,11 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background  : "var(--background)",
+        foreground  : "var(--foreground)",
+        "brand-main": "var(--brand-main)",
+        "brand-dark": "var(--brand-dark)",
       },
     },
   },
   darkMode: "class",
-  plugins: [nextui()]
+  plugins : [nextui()],
 } satisfies Config;
