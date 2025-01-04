@@ -2,7 +2,7 @@
 
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
-import { usePathname } from "../../../../i18n/routing";
+import { usePathname } from "../../../shared/config/i18n/routing";
 import { Button, ButtonGroup } from "@nextui-org/react";
 
 type Props = {

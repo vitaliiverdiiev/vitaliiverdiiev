@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 import { nextui } from "@nextui-org/react";
 import tailwindcssAnimate from "tailwindcss-animate";
+
 export default {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
