@@ -9,6 +9,7 @@ export const HeroImage = () => {
         src="/amigos.jpg"
         width={500}
         height={500}
+        priority={true}
       />
     </div>
   );
