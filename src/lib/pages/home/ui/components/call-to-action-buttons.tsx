@@ -14,8 +14,9 @@ export const CallToActionButtons = () => {
         downloadName="Vitalii_Verdiiev_Front-end_Developer.pdf"
         link="documents/Vitalii_Verdiiev_Front-end_Developer.pdf"
       />
-      <Button isDisabled>{t("contact-me")}</Button>
+      <Button variant="light" isDisabled>
+        {t("lets-talk")}
+      </Button>
     </div>
   );
 };
-Button;

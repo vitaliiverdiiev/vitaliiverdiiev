@@ -10,7 +10,7 @@ export const SocialLinks = () => {
     <ul className="flex items-center gap-5 mb-[61px]">
       {socialLinks.map((link) => (
         <li key={link.name}>
-          <Button as={Link} href={link.url} target="_blank" isIconOnly>
+          <Button as={Link} href={link.url} target="_blank" variant="light" isIconOnly>
             <Icon icon={link.icon} />
           </Button>
         </li>

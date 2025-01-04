@@ -3,7 +3,7 @@
     "test": "This is a test text."
   },
   "Actions": {
-    "contact-me": "Contact Me",
+    "lets-talk": "Let's talk",
     "download-resume": "Download Resume",
     "login": "Login"
   },

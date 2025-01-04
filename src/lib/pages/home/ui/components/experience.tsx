@@ -10,7 +10,7 @@ export const Experience = () => {
     <div
       className={cn(
         "grid grid-cols-[180px_auto_200px] max-w-fit gap-6",
-        "bg-background-card rounded-[10px]"
+        "bg-background-card rounded-xl "
       )}
     >
       <ExperienceItem title="5+" description={t("achievements.experience")} />

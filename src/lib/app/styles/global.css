@@ -56,7 +56,7 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    --background-card: #333333;
+    --background-card: #2e2e2e;
 
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
