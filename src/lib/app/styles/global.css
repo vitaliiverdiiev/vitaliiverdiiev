@@ -7,13 +7,14 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-geist-sans);
+  /* font-family: "Karla", serif; */
+  font-family: var(--font-karla), serif;
   transition: background-color 0.3s, color 0.3s;
 }
 
 @layer components {
   .container {
-    max-width: 1440px;
+    max-width: var(--container-max-width);
     min-height: 100%;
     margin-inline: auto;
     padding-inline: 32px;

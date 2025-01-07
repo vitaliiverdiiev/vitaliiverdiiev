@@ -15,6 +15,7 @@
   
   --header-height: 80px;
   --sidebar-width: 250px;
+  --container-max-width: 1920px;
 }
 
 @media (prefers-color-scheme: dark) {

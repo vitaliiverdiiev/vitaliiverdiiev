@@ -1,23 +1,23 @@
-import type { Metadata } from "next";
-import { Footer, Header } from "@/widgets";
+import { Providers } from "@/app/providers";
 import "@/app/styles/global.css";
+import { LayoutProps } from "../../_app/[locale]/types";
+import { routing } from "@/shared/config/i18n/routing";
+import { KarlaFont } from "./(home)/font";
 
-export const metadata: Metadata = {
-  title: "VitaliiVerdiiev | Home",
-  description:
-    "Hi! I am Vitalii Verdiiev. I am a JavaScript Full-stack Developer.",
-};
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
-export default async function HomeLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default async function RootLayout({ children, params }: LayoutProps) {
+  const { locale } = await params;
+
   return (
-    <div id="home-page">
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </div>
+    <html lang={locale} className="dark">
+      <body
+        className={`${KarlaFont.variable} antialiased`}
+      >
+        <Providers>{children}</Providers>
+      </body>
+    </html>
   );
 }

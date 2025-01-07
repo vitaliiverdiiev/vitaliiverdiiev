@@ -17,10 +17,6 @@ export const Header = ({ className = "" }: PropsWithClassName) => {
           <ThemeToggle />
           <LocaleSwitcher />
         </div>
-        {/* <ButtonGroup size="md" >
-          <UserSettingsDropdown />
-          <LoginButton />
-        </ButtonGroup> */}
       </div>
     </header>
   );

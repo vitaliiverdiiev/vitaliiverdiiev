@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Header, Main, Sidebar } from "@/widgets";
 import "@/app/styles/global.css";
+import { SidebarNav } from "@/widgets/layout/sidebar/ui/sidebar-nav";
 
 export const metadata: Metadata = {
   title: "VitaliiVerdiiev | Home",
   description:
-    "Hi! I am Vitalii Verdiiev. I am a JavaScript Full-stack Developer.",
+  "Hi! I am Vitalii Verdiiev. I am a JavaScript Full-stack Developer.",
 };
+
 
 export default async function HomeLayout({
   children,
@@ -15,11 +17,11 @@ export default async function HomeLayout({
 }>) {
   return (
     <div id="app">
-      <Header className="[&>div]:max-w-full" />
-      <Sidebar />
-      <Main>
-        {children}
-      </Main>
+      <Header />
+      <Sidebar>
+        <SidebarNav />
+      </Sidebar>
+      <Main>{children}</Main>
     </div>
   );
 }
