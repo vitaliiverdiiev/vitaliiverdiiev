@@ -1,0 +1,43 @@
+@import "./compounds/scrollbar.css";
+@import "./compounds/variables.css";
+@import "./compounds/layouts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--font-karla), serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@layer components {
+  .container {
+    max-width: var(--container-max-width);
+    min-height: 100%;
+    margin-inline: auto;
+    padding-inline: 32px;
+
+    @media screen and (width < 768px) {
+      width: 100%;
+      padding-inline: 16px;
+    }
+  }
+}
+
+@layer utilities {
+  .general {
+    & div:not(:nth-child(3n)) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .bordered {
+    border: 1px solid red;
+  }
+}

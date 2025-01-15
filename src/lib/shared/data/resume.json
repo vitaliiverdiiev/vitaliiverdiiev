@@ -1,0 +1,151 @@
+{
+  "generalInfo": {
+    "name": "Vitalii",
+    "secondName": "Verdiiev",
+    "position": "Front-end Developer",
+    "location": "Kyiv, Ukraine",
+    "phone": "+38-063-5105769",
+    "languages": [
+      {
+        "language": "English",
+        "proficency": "Fluent"
+      },
+      {
+        "language": "Ukrainian",
+        "proficency": "Native"
+      }
+    ],
+    "email": "vitaliiverdiiev@gmail.com",
+    "github": "https://github.com/vitaliiverdiiev",
+    "telegram": "https://t.me/ukrainiancustomer",
+    "linkedin": "https://www.linkedin.com/in/vitaliiverdiiev"
+  },
+  "summary": "Front-end developer with over 3 years of commercial experience and a passion for coding that's been growing strong since 2019. I'm excited to join an experienced team where I can share, learn, and contribute at every level. For me, collaboration goes beyond just writing code - I love being part of the creative process, from brainstorming ideas and shaping designs to solving technical puzzles and improving user workflows. Both a solo front-end developer, as well as a team player, very Agile-friendly.",
+  "experience": [
+    {
+      "position": "Front-end developer",
+      "company": "WiseVision",
+      "companyType": "outsource/outstaff",
+      "location": "Kyiv, Ukraine",
+      "dateStart": "Aug 2024",
+      "dateEnd": "Nov 2024",
+      "period": "4 month",
+      "positionType": "full-time, project-based",
+      "achievements": [
+        "Developed UI components for the Impasto.io project;",
+        "Design to code the corresponding landing page."
+      ]
+    },
+    {
+      "position": "Front-end developer",
+      "company": "Uniqit Group LLC",
+      "companyType": "Nuvalt project, product",
+      "location": "Kyiv, Ukraine",
+      "dateStart": "May 2023",
+      "dateEnd": "July 2024",
+      "period": "1 year 3 months",
+      "positionType": "full time",
+      "achievements": [
+        "Developed a Crypto Business Management Platform dashboard admin & statistics apps;",
+        "Worked on a self-hosted installer;",
+        "Contributed to the creation of a custom UI library;",
+        "Translated designs into business landing pages within tight deadlines."
+      ]
+    },
+    {
+      "position": "Front-end developer",
+      "company": "Faster Than Light LLC",
+      "companyType": "outsource/outstaff",
+      "location": "Kyiv, Ukraine",
+      "dateStart": "Oct 2021",
+      "dateEnd": "May 2023",
+      "period": "1 year 8 month",
+      "positionType": "full time",
+      "achievements": [
+        "Delivered an MVP for the Offsiter project, helping the team secure investments;",
+        "Developed an Accounting page for an internal CRM, closely collaborating with Design, QA, and Backend teams;",
+        "Supported multiple projects part-time, ensuring sprint goals were met."
+      ]
+    },
+    {
+      "position": "HTML & CSS developer (freelance)",
+      "company": "freelance",
+      "companyType": "",
+      "location": "Kyiv, Ukraine",
+      "dateStart": "Sep 2019",
+      "dateEnd": "Mar 2021",
+      "period": "1 year 7 months",
+      "positionType": "part-time",
+      "achievements": [
+        "Design to code landing pages, widgets, and email templates."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Front-end Developer (React/TypeScript)",
+      "almamater": "DAN.IT Education",
+      "dates": "Jan 2020 - Aug 2021",
+      "location": "Kyiv, Ukraine"
+    },
+    {
+      "title": "Bachelor's Degree & Master of Business Administration",
+      "almamater": "Management of Organizations and Administrations in Donetsk Institute of Tourist Business",
+      "dates": "Sep 2009 - Feb 2015",
+      "location": "Donetsk, Ukraine"
+    }
+  ],
+  "techStack": {
+    "frontend": {
+      "base": ["HTML/HTML5", "CSS/CSS3", "JavaScript/ES6+", "TypeScript"],
+      "frameworks": ["React", "Next.JS"],
+      "state management": [
+        "Context API",
+        "Redux",
+        "Redux Toolkit",
+        "Zustand",
+        "Jotai"
+      ],
+      "ui libraries": [
+        "MUI",
+        "NextUI",
+        "Shadcn/ui",
+        "Chakra UI",
+        "Ant Design",
+        "Bootstrap"
+      ],
+      "css tools": ["SCSS", "Less", "TailwindCSS", "Styled Components"],
+      "routing": [
+        "React Router",
+        "TanStack Router",
+        "Next.JS App Router & Pages Router"
+      ],
+      "auth": ["NextAuth/Auth.js", "OAuth"],
+      "forms": ["React Hook Form", "TanStack Form", "Formik"],
+      "validation": ["Zod", "Yup"],
+      "internalization": ["i18Next", "Next-Intl"],
+      "api": ["GraphQL (Apollo Client)", "REST (Axios, TanStack Query)"],
+      "tables": ["TanStack Table"],
+      "charts": ["Recharts"],
+      "testing": ["Jest", "Vitest", "React Testing Library", "Cypress"],
+      "ci/cd": ["GitHub Actions", "GitLab CI/CD"],
+      "communication": ["WebSocket/Socket.IO"],
+      "project builders": ["Webpack", "Bebel", "Gulp"]
+    },
+    "backend": {
+      "base": ["Node.js"],
+      "frameworks": ["Express", "NestJS"],
+      "api": ["REST", "GraphQL"],
+      "databases": ["MongoDB", "PostgreSQL", "Redis"],
+      "orm/schemas": ["TypeORM", "Mongoose", "Prisma"],
+      "containerization": ["Docker", "Docker Compose"],
+      "cloud": ["Heroku", "Vercel", "Amazon", "ECR"]
+    },
+    "general": {
+      "methodologies": ["Agile", "SCRUM", "BEM", "FSD"],
+      "documentation": ["Storybook", "Postman", "Swagger"],
+      "version control": ["Git"],
+      "os": ["Linux", "Windows", "MacOS"]
+    }
+  }
+}

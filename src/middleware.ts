@@ -1,19 +1,18 @@
-import createMiddleware from 'next-intl/middleware';
-import { routing } from './lib/shared/config/i18n/routing';
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
-export default createMiddleware(routing);
+export default function middleware(request: NextRequest) {
+  const requestHeaders = new Headers(request.headers);
+
+  requestHeaders.set("x-next-pathname", request.nextUrl.pathname);
+
+  return NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
+}
 
 export const config = {
-  matcher: [
-    // Enable a redirect to a matching locale at the root
-    '/',
-
-    // Set a cookie to remember the previous locale for
-    // all requests that have a locale prefix
-    '/(en|ua)/:path*',
-
-    // Enable redirects that add missing locales
-    // (e.g. `/pathnames` -> `/en/pathnames`)
-    '/((?!_next|_vercel|.*\\..*).*)'
-  ]
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
 };

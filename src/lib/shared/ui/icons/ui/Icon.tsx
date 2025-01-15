@@ -1,4 +1,4 @@
-import { cn } from '@/shared/utils/cn';
+import { cn } from '@/shared/utils';
 import { ICON_MAP, IIconName } from '../model';
 
 type Props = Omit<React.HTMLAttributes<SVGElement>, 'color'> & {
